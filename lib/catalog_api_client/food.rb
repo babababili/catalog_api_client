@@ -10,4 +10,15 @@ module CatalogApiClient
       end
     end
   end
+
+  class Post
+    attr_writer :title
+    attr_reader :title
+    def print_title
+      puts "The title of this post is #{@title}"
+    end
+  end
+
+  class Courses
+  end
 end

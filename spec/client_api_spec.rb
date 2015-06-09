@@ -9,3 +9,12 @@ describe CatalogApiClient::Food do
     expect(CatalogApiClient::Food.portray('Not Broccoli')).to eql('Delicious!')
   end
 end
+
+
+describe CatalogApiClient::Post do
+  it 'post test' do
+    pst = CatalogApiClient::Post.new
+    pst.title = 'Sands'
+    expect(pst.title.eql? 'Sands')
+  end
+end
